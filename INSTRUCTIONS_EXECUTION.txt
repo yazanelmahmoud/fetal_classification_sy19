@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════
+  INSTRUCTIONS POUR EXÉCUTER LE NOTEBOOK R
+═══════════════════════════════════════════════════════════════
+
+Le notebook R (projet_sy19_R.ipynb) est prêt et valide !
+
+MÉTHODE 1 : Avec Jupyter Notebook (Recommandé)
+────────────────────────────────────────────────
+1. Installer R depuis : https://cran.r-project.org/
+2. Installer Jupyter : pip install jupyter
+3. Installer le kernel R pour Jupyter :
+   - Ouvrir R
+   - Exécuter :
+     install.packages(c("IRkernel", "devtools"))
+     devtools::install_github("IRkernel/IRkernel")
+     IRkernel::installspec()
+4. Installer les packages nécessaires :
+   install.packages(c("ggplot2", "dplyr", "corrplot", "gridExtra", 
+                      "FactoMineR", "factoextra", "cluster", "class", 
+                      "e1071", "MASS", "rpart", "randomForest", 
+                      "caret", "pROC", "nnet", "mclust", "rpart.plot"))
+5. Lancer : jupyter notebook
+6. Ouvrir : projet_sy19_R.ipynb
+7. Sélectionner le kernel R et exécuter toutes les cellules
+
+MÉTHODE 2 : Avec RStudio
+─────────────────────────
+1. Installer RStudio : https://www.rstudio.com/
+2. Ouvrir RStudio
+3. Installer les packages (voir ci-dessus)
+4. Ouvrir le fichier projet_sy19_R.ipynb
+5. Exécuter les cellules
+
+MÉTHODE 3 : Avec le script R
+─────────────────────────────
+1. Installer R
+2. Exécuter dans PowerShell :
+   Rscript run_notebook_R.R
+   
+   Ou dans RStudio :
+   - Ouvrir run_notebook_R.R
+   - Cliquer sur "Source"
+
+MÉTHODE 4 : Dans Cursor/VS Code
+─────────────────────────────────
+1. Installer l'extension "R" dans Cursor/VS Code
+2. Installer R
+3. Ouvrir projet_sy19_R.ipynb
+4. Sélectionner le kernel R
+5. Exécuter les cellules
+
+═══════════════════════════════════════════════════════════════
+IMPORTANT : Assurez-vous que fetal_health.csv est dans le même
+            répertoire que le notebook !
+═══════════════════════════════════════════════════════════════
+
